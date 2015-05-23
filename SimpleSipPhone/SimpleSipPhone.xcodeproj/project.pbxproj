@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1A952021B1027D300094557 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A952011B1027D300094557 /* AVFoundation.framework */; };
+		C1A952041B1027DD00094557 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A952031B1027DD00094557 /* AudioToolbox.framework */; };
+		C1A9520A1B10425F00094557 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A952091B10425F00094557 /* LoginViewController.m */; };
+		C1A9520D1B10499100094557 /* DialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A9520C1B10499100094557 /* DialViewController.m */; };
+		C1A952101B10526C00094557 /* IncomingCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A9520F1B10526C00094557 /* IncomingCallViewController.m */; };
+		C1B3D7361B0E1FD000E9AEBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B3D7351B0E1FD000E9AEBE /* main.m */; };
+		C1B3D7391B0E1FD000E9AEBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B3D7381B0E1FD000E9AEBE /* AppDelegate.m */; };
+		C1B3D7411B0E1FD000E9AEBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B3D7401B0E1FD000E9AEBE /* Images.xcassets */; };
+		C1B3D8BC1B0E219100E9AEBE /* libpj-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D89B1B0E219100E9AEBE /* libpj-arm-apple-darwin9.a */; };
+		C1B3D8BD1B0E219100E9AEBE /* libpjlib-util-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D89D1B0E219100E9AEBE /* libpjlib-util-arm-apple-darwin9.a */; };
+		C1B3D8BE1B0E219100E9AEBE /* libpjmedia-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D89F1B0E219100E9AEBE /* libpjmedia-arm-apple-darwin9.a */; };
+		C1B3D8BF1B0E219100E9AEBE /* libpjmedia-audiodev-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8A01B0E219100E9AEBE /* libpjmedia-audiodev-arm-apple-darwin9.a */; };
+		C1B3D8C01B0E219100E9AEBE /* libpjmedia-codec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8A11B0E219100E9AEBE /* libpjmedia-codec-arm-apple-darwin9.a */; };
+		C1B3D8C11B0E219100E9AEBE /* libpjmedia-videodev-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8A21B0E219100E9AEBE /* libpjmedia-videodev-arm-apple-darwin9.a */; };
+		C1B3D8C21B0E219100E9AEBE /* libpjsdp-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8A31B0E219100E9AEBE /* libpjsdp-arm-apple-darwin9.a */; };
+		C1B3D8C31B0E219100E9AEBE /* libpjnath-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8A51B0E219100E9AEBE /* libpjnath-arm-apple-darwin9.a */; };
+		C1B3D8C41B0E219100E9AEBE /* libpjsip-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8A71B0E219100E9AEBE /* libpjsip-arm-apple-darwin9.a */; };
+		C1B3D8C51B0E219100E9AEBE /* libpjsip-simple-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8A81B0E219100E9AEBE /* libpjsip-simple-arm-apple-darwin9.a */; };
+		C1B3D8C61B0E219100E9AEBE /* libpjsip-ua-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8A91B0E219100E9AEBE /* libpjsip-ua-arm-apple-darwin9.a */; };
+		C1B3D8C71B0E219100E9AEBE /* libpjsua-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8AA1B0E219100E9AEBE /* libpjsua-arm-apple-darwin9.a */; };
+		C1B3D8C81B0E219100E9AEBE /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8AC1B0E219100E9AEBE /* libcrypto.a */; };
+		C1B3D8C91B0E219100E9AEBE /* libg7221codec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8AD1B0E219100E9AEBE /* libg7221codec-arm-apple-darwin9.a */; };
+		C1B3D8CA1B0E219100E9AEBE /* libgsmcodec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8AE1B0E219100E9AEBE /* libgsmcodec-arm-apple-darwin9.a */; };
+		C1B3D8CB1B0E219100E9AEBE /* libilbccodec-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8AF1B0E219100E9AEBE /* libilbccodec-arm-apple-darwin9.a */; };
+		C1B3D8CC1B0E219100E9AEBE /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8B01B0E219100E9AEBE /* libopencore-amrnb.a */; };
+		C1B3D8CD1B0E219100E9AEBE /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8B11B0E219100E9AEBE /* libopencore-amrwb.a */; };
+		C1B3D8CE1B0E219100E9AEBE /* libresample-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8B21B0E219100E9AEBE /* libresample-arm-apple-darwin9.a */; };
+		C1B3D8CF1B0E219100E9AEBE /* libspeex-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8B31B0E219100E9AEBE /* libspeex-arm-apple-darwin9.a */; };
+		C1B3D8D01B0E219100E9AEBE /* libsrtp-arm-apple-darwin9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8B41B0E219100E9AEBE /* libsrtp-arm-apple-darwin9.a */; };
+		C1B3D8D11B0E219100E9AEBE /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8B51B0E219100E9AEBE /* libssl.a */; };
+		C1B3D8D21B0E219200E9AEBE /* libvo-amrwbenc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B3D8B61B0E219100E9AEBE /* libvo-amrwbenc.a */; };
+		C1B3D8D31B0E25E300E9AEBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B3D73D1B0E1FD000E9AEBE /* Main.storyboard */; };
+		C1B3D8D41B0E25E800E9AEBE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1B3D7421B0E1FD000E9AEBE /* LaunchScreen.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C1A952011B1027D300094557 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C1A952031B1027DD00094557 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C1A952081B10425F00094557 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C1A952091B10425F00094557 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C1A9520B1B10499100094557 /* DialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialViewController.h; sourceTree = "<group>"; };
+		C1A9520C1B10499100094557 /* DialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialViewController.m; sourceTree = "<group>"; };
+		C1A9520E1B10526C00094557 /* IncomingCallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomingCallViewController.h; sourceTree = "<group>"; };
+		C1A9520F1B10526C00094557 /* IncomingCallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomingCallViewController.m; sourceTree = "<group>"; };
+		C1B3D7301B0E1FD000E9AEBE /* SimpleSipPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSipPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B3D7341B0E1FD000E9AEBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1B3D7351B0E1FD000E9AEBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1B3D7371B0E1FD000E9AEBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C1B3D7381B0E1FD000E9AEBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C1B3D73E1B0E1FD000E9AEBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1B3D7401B0E1FD000E9AEBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C1B3D7431B0E1FD000E9AEBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C1B3D89B1B0E219100E9AEBE /* libpj-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpj-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D89D1B0E219100E9AEBE /* libpjlib-util-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjlib-util-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D89F1B0E219100E9AEBE /* libpjmedia-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D8A01B0E219100E9AEBE /* libpjmedia-audiodev-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-audiodev-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D8A11B0E219100E9AEBE /* libpjmedia-codec-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-codec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D8A21B0E219100E9AEBE /* libpjmedia-videodev-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjmedia-videodev-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D8A31B0E219100E9AEBE /* libpjsdp-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsdp-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D8A51B0E219100E9AEBE /* libpjnath-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjnath-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D8A71B0E219100E9AEBE /* libpjsip-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D8A81B0E219100E9AEBE /* libpjsip-simple-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-simple-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D8A91B0E219100E9AEBE /* libpjsip-ua-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsip-ua-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D8AA1B0E219100E9AEBE /* libpjsua-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libpjsua-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D8AC1B0E219100E9AEBE /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		C1B3D8AD1B0E219100E9AEBE /* libg7221codec-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libg7221codec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D8AE1B0E219100E9AEBE /* libgsmcodec-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgsmcodec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D8AF1B0E219100E9AEBE /* libilbccodec-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libilbccodec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D8B01B0E219100E9AEBE /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		C1B3D8B11B0E219100E9AEBE /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		C1B3D8B21B0E219100E9AEBE /* libresample-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libresample-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D8B31B0E219100E9AEBE /* libspeex-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libspeex-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D8B41B0E219100E9AEBE /* libsrtp-arm-apple-darwin9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libsrtp-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		C1B3D8B51B0E219100E9AEBE /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		C1B3D8B61B0E219100E9AEBE /* libvo-amrwbenc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libvo-amrwbenc.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1B3D72D1B0E1FD000E9AEBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A952041B1027DD00094557 /* AudioToolbox.framework in Frameworks */,
+				C1A952021B1027D300094557 /* AVFoundation.framework in Frameworks */,
+				C1B3D8C21B0E219100E9AEBE /* libpjsdp-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8BF1B0E219100E9AEBE /* libpjmedia-audiodev-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8D11B0E219100E9AEBE /* libssl.a in Frameworks */,
+				C1B3D8BD1B0E219100E9AEBE /* libpjlib-util-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8C91B0E219100E9AEBE /* libg7221codec-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8CD1B0E219100E9AEBE /* libopencore-amrwb.a in Frameworks */,
+				C1B3D8BC1B0E219100E9AEBE /* libpj-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8D01B0E219100E9AEBE /* libsrtp-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8C71B0E219100E9AEBE /* libpjsua-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8C11B0E219100E9AEBE /* libpjmedia-videodev-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8CC1B0E219100E9AEBE /* libopencore-amrnb.a in Frameworks */,
+				C1B3D8BE1B0E219100E9AEBE /* libpjmedia-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8C01B0E219100E9AEBE /* libpjmedia-codec-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8C31B0E219100E9AEBE /* libpjnath-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8CB1B0E219100E9AEBE /* libilbccodec-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8CA1B0E219100E9AEBE /* libgsmcodec-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8C41B0E219100E9AEBE /* libpjsip-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8C81B0E219100E9AEBE /* libcrypto.a in Frameworks */,
+				C1B3D8C61B0E219100E9AEBE /* libpjsip-ua-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8CE1B0E219100E9AEBE /* libresample-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8CF1B0E219100E9AEBE /* libspeex-arm-apple-darwin9.a in Frameworks */,
+				C1B3D8D21B0E219200E9AEBE /* libvo-amrwbenc.a in Frameworks */,
+				C1B3D8C51B0E219100E9AEBE /* libpjsip-simple-arm-apple-darwin9.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1B3D7271B0E1FCF00E9AEBE = {
+			isa = PBXGroup;
+			children = (
+				C1B3D7321B0E1FD000E9AEBE /* SimpleSipPhone */,
+				C1B3D7311B0E1FD000E9AEBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1B3D7311B0E1FD000E9AEBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3D7301B0E1FD000E9AEBE /* SimpleSipPhone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1B3D7321B0E1FD000E9AEBE /* SimpleSipPhone */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3D7371B0E1FD000E9AEBE /* AppDelegate.h */,
+				C1B3D7381B0E1FD000E9AEBE /* AppDelegate.m */,
+				C1A952081B10425F00094557 /* LoginViewController.h */,
+				C1A952091B10425F00094557 /* LoginViewController.m */,
+				C1A9520B1B10499100094557 /* DialViewController.h */,
+				C1A9520C1B10499100094557 /* DialViewController.m */,
+				C1A9520E1B10526C00094557 /* IncomingCallViewController.h */,
+				C1A9520F1B10526C00094557 /* IncomingCallViewController.m */,
+				C1B3D73D1B0E1FD000E9AEBE /* Main.storyboard */,
+				C1B3D7401B0E1FD000E9AEBE /* Images.xcassets */,
+				C1B3D7421B0E1FD000E9AEBE /* LaunchScreen.xib */,
+				C1B3D7591B0E219100E9AEBE /* PJSIP */,
+				C1B3D7331B0E1FD000E9AEBE /* Supporting Files */,
+			);
+			path = SimpleSipPhone;
+			sourceTree = "<group>";
+		};
+		C1B3D7331B0E1FD000E9AEBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1A952031B1027DD00094557 /* AudioToolbox.framework */,
+				C1A952011B1027D300094557 /* AVFoundation.framework */,
+				C1B3D7341B0E1FD000E9AEBE /* Info.plist */,
+				C1B3D7351B0E1FD000E9AEBE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1B3D7591B0E219100E9AEBE /* PJSIP */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3D8991B0E219100E9AEBE /* libs */,
+			);
+			path = PJSIP;
+			sourceTree = "<group>";
+		};
+		C1B3D8991B0E219100E9AEBE /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3D89A1B0E219100E9AEBE /* pjlib */,
+				C1B3D89C1B0E219100E9AEBE /* pjlib-util */,
+				C1B3D89E1B0E219100E9AEBE /* pjmedia */,
+				C1B3D8A41B0E219100E9AEBE /* pjnath */,
+				C1B3D8A61B0E219100E9AEBE /* pjsip */,
+				C1B3D8AB1B0E219100E9AEBE /* third_party */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		C1B3D89A1B0E219100E9AEBE /* pjlib */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3D89B1B0E219100E9AEBE /* libpj-arm-apple-darwin9.a */,
+			);
+			path = pjlib;
+			sourceTree = "<group>";
+		};
+		C1B3D89C1B0E219100E9AEBE /* pjlib-util */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3D89D1B0E219100E9AEBE /* libpjlib-util-arm-apple-darwin9.a */,
+			);
+			path = "pjlib-util";
+			sourceTree = "<group>";
+		};
+		C1B3D89E1B0E219100E9AEBE /* pjmedia */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3D89F1B0E219100E9AEBE /* libpjmedia-arm-apple-darwin9.a */,
+				C1B3D8A01B0E219100E9AEBE /* libpjmedia-audiodev-arm-apple-darwin9.a */,
+				C1B3D8A11B0E219100E9AEBE /* libpjmedia-codec-arm-apple-darwin9.a */,
+				C1B3D8A21B0E219100E9AEBE /* libpjmedia-videodev-arm-apple-darwin9.a */,
+				C1B3D8A31B0E219100E9AEBE /* libpjsdp-arm-apple-darwin9.a */,
+			);
+			path = pjmedia;
+			sourceTree = "<group>";
+		};
+		C1B3D8A41B0E219100E9AEBE /* pjnath */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3D8A51B0E219100E9AEBE /* libpjnath-arm-apple-darwin9.a */,
+			);
+			path = pjnath;
+			sourceTree = "<group>";
+		};
+		C1B3D8A61B0E219100E9AEBE /* pjsip */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3D8A71B0E219100E9AEBE /* libpjsip-arm-apple-darwin9.a */,
+				C1B3D8A81B0E219100E9AEBE /* libpjsip-simple-arm-apple-darwin9.a */,
+				C1B3D8A91B0E219100E9AEBE /* libpjsip-ua-arm-apple-darwin9.a */,
+				C1B3D8AA1B0E219100E9AEBE /* libpjsua-arm-apple-darwin9.a */,
+			);
+			path = pjsip;
+			sourceTree = "<group>";
+		};
+		C1B3D8AB1B0E219100E9AEBE /* third_party */ = {
+			isa = PBXGroup;
+			children = (
+				C1B3D8AC1B0E219100E9AEBE /* libcrypto.a */,
+				C1B3D8AD1B0E219100E9AEBE /* libg7221codec-arm-apple-darwin9.a */,
+				C1B3D8AE1B0E219100E9AEBE /* libgsmcodec-arm-apple-darwin9.a */,
+				C1B3D8AF1B0E219100E9AEBE /* libilbccodec-arm-apple-darwin9.a */,
+				C1B3D8B01B0E219100E9AEBE /* libopencore-amrnb.a */,
+				C1B3D8B11B0E219100E9AEBE /* libopencore-amrwb.a */,
+				C1B3D8B21B0E219100E9AEBE /* libresample-arm-apple-darwin9.a */,
+				C1B3D8B31B0E219100E9AEBE /* libspeex-arm-apple-darwin9.a */,
+				C1B3D8B41B0E219100E9AEBE /* libsrtp-arm-apple-darwin9.a */,
+				C1B3D8B51B0E219100E9AEBE /* libssl.a */,
+				C1B3D8B61B0E219100E9AEBE /* libvo-amrwbenc.a */,
+			);
+			path = third_party;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1B3D72F1B0E1FD000E9AEBE /* SimpleSipPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1B3D7531B0E1FD000E9AEBE /* Build configuration list for PBXNativeTarget "SimpleSipPhone" */;
+			buildPhases = (
+				C1B3D72C1B0E1FD000E9AEBE /* Sources */,
+				C1B3D72D1B0E1FD000E9AEBE /* Frameworks */,
+				C1B3D72E1B0E1FD000E9AEBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleSipPhone;
+			productName = SimpleSipPhone;
+			productReference = C1B3D7301B0E1FD000E9AEBE /* SimpleSipPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1B3D7281B0E1FCF00E9AEBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Makee;
+				TargetAttributes = {
+					C1B3D72F1B0E1FD000E9AEBE = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C1B3D72B1B0E1FCF00E9AEBE /* Build configuration list for PBXProject "SimpleSipPhone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1B3D7271B0E1FCF00E9AEBE;
+			productRefGroup = C1B3D7311B0E1FD000E9AEBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1B3D72F1B0E1FD000E9AEBE /* SimpleSipPhone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1B3D72E1B0E1FD000E9AEBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1B3D7411B0E1FD000E9AEBE /* Images.xcassets in Resources */,
+				C1B3D8D41B0E25E800E9AEBE /* LaunchScreen.xib in Resources */,
+				C1B3D8D31B0E25E300E9AEBE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1B3D72C1B0E1FD000E9AEBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A9520D1B10499100094557 /* DialViewController.m in Sources */,
+				C1B3D7391B0E1FD000E9AEBE /* AppDelegate.m in Sources */,
+				C1A952101B10526C00094557 /* IncomingCallViewController.m in Sources */,
+				C1B3D7361B0E1FD000E9AEBE /* main.m in Sources */,
+				C1A9520A1B10425F00094557 /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C1B3D73D1B0E1FD000E9AEBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1B3D73E1B0E1FD000E9AEBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1B3D7421B0E1FD000E9AEBE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1B3D7431B0E1FD000E9AEBE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1B3D7511B0E1FD000E9AEBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C1B3D7521B0E1FD000E9AEBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1B3D7541B0E1FD000E9AEBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"PJ_AUTOCONF=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjlib",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjmedia",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjnath",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjsip",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjlib-util",
+				);
+				INFOPLIST_FILE = SimpleSipPhone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/libs/pjlib",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/libs/pjlib-util",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/libs/pjmedia",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/libs/pjnath",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/libs/pjsip",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/libs/third_party",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC\n-ObjC\n-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C1B3D7551B0E1FD000E9AEBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = "PJ_AUTOCONF=1";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjlib",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjmedia",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjnath",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjsip",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/includes/pjlib-util",
+				);
+				INFOPLIST_FILE = SimpleSipPhone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/libs/pjlib",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/libs/pjlib-util",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/libs/pjmedia",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/libs/pjnath",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/libs/pjsip",
+					"$(PROJECT_DIR)/SimpleSipPhone/PJSIP/libs/third_party",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC\n-ObjC\n-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1B3D72B1B0E1FCF00E9AEBE /* Build configuration list for PBXProject "SimpleSipPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1B3D7511B0E1FD000E9AEBE /* Debug */,
+				C1B3D7521B0E1FD000E9AEBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1B3D7531B0E1FD000E9AEBE /* Build configuration list for PBXNativeTarget "SimpleSipPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1B3D7541B0E1FD000E9AEBE /* Debug */,
+				C1B3D7551B0E1FD000E9AEBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1B3D7281B0E1FCF00E9AEBE /* Project object */;
+}
